@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salt n Pepper</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo"><a href="#"><img src="./img/logo.webp" alt=""></a></div>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Publication</li>
+                <li>Feed Back</li>
+            </ul>
+            <a href="#"><button class="get-button">Get Franchise</button></a>
+            <a href="#"><button class="order-button">Order Online <i class="ri-arrow-right-circle-fill"
+                        color="white"></i></button></a>
+        </nav>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides  fade"><img src="./img/banner-1.webp" alt="banner image"></div>
+        <div class="mySlides fade"><img src="./img/banner-2.webp" alt="banner image"></div>
+        <div class="mySlides fade"><img src="./img/banner-3.webp" alt="banner image"></div>
+        <div class="mySlides fade"><img src="./img/banner-4.webp" alt="banner image"></div>
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="welcome-container">
+        <div class="container">
+            <h2>WelCome to <span>Salt'n Pepper</span>
+                <br>
+                Restaurants! Our Brands
+            </h2>
+            <br>
+            <p>Please click our brands below for further information, reservations or to order online!
+            </p>
+        </div>
+        <div class="cart-container">
+            <div class="cart">
+                <img src="./img/cart-1.webp" alt="cart image"></img>
+                <br>
+                <a href=""><button>Order Now</button></a>
+            </div>
+            <div class="cart">
+                <img src="./img/cart-2.webp" alt="cart image"></img>
+                <br>
+                <a href=""><button>Order Now</button></a>
+            </div>
+            <div class="cart">
+                <img src="./img/cart-3.webp" alt="cart image"></img>
+                <br>
+                <a href=""><button>Order Now</button></a>
+            </div>
+        </div>
+    </div>
+    <section class="franchise-section">
+        <div class="container">
+            <div class="row">
+                <div class="custome-heading">
+                    <h2><span>Salt'n Pepper</span> <br>
+                        Restaurants Franchise</h2>
+                    <p>
+                        Each of our franchises are individually managed. For further details, kindly contact them
+                        directly.
+                    </p>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./img/s.webp" alt="">
+            </div>
+            <div class="row">
+                <div class="row-left">
+                    <small>Islamabad</small>
+                    <h3><span>Salt'n Pepper</span></h3>
+                    <p><i class="ri-map-pin-2-fill"></i>Plot# 55, Shabbir Plaza, Blue Area, F-6, Islamabad</p>
+                    <p><i class="ri-phone-fill"></i>Ph: 051-2604904-6</p>
+                </div>
+                <div class="row-right">
+                    <img src="./img/7aba8915-02ed-46ee-bd96-1063abe072fa.webp" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-right">
+                    <img src="./img/7aba8915-02ed-46ee-bd96-1063abe072fa.webp" alt="">
+                </div>
+                <div class="row-left">
+                    <small>Islamabad</small>
+                    <h3><span>Salt'n Pepper</span></h3>
+                    <p><i class="ri-map-pin-2-fill"></i> 4-Kohinoor City, Faisalabad</p>
+                    <p><i class="ri-phone-fill"></i>Ph: 041-8711404</p>
+                </div>
+            </div>
+            <div class="row"></div>
+        </div>
+
+
+    </section>
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+</body>
+
+</html>

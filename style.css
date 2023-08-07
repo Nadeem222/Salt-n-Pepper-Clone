@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@900&family=Stick+No+Bills:wght@800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;;
+    color: #ffff;
+}
+.navbar{
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    position: sticky;
+    width: 100%;
+}
+.navbar img{
+    width: 150px;
+    height: 85px;
+    margin: 15px 120px 0 56px
+}
+.navbar button{
+    border-radius: 30px;
+    margin-left: 15px;
+    color: #ffff;
+    cursor: pointer;
+
+}
+.navbar li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: 18px;
+    margin-right: 10px;
+    
+}
+.navbar li:hover{
+    color: red;
+    text-decoration:wavy;
+    cursor: pointer;
+}
+.order-button{
+    background-color: red;
+    display: flex;
+    padding: 8px 15px 8px 15px;
+    align-items: center;
+    margin-right: 20px;
+    border: none;
+
+}
+.get-button{
+    padding: 20px 35px 20px 35px;
+    background: transparent;
+    border: 1px solid #ffff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.order-button i{
+    font-size: 40px;
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+/* Slide section start here */
+
+.mySlides{
+    display: none;
+}
+.mySlides img{
+    vertical-align: middle;
+    width: 100%;
+}
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+}
+.dot {
+    height: 10px;
+    width: 30px;
+    margin: 0 2px 25px;
+    background-color: #bbb;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #707070;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+/* Welcome container start here */
+.welcome-container{
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-weight: 200;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+span{
+    font-size: 40px;
+    font-weight:900 ;
+    font-family: 'Stick No Bills', sans-serif;
+
+}
+p{
+    color: #bbb;
+    font-size: 15px;
+}
+.cart-container{
+    display: flex;
+}
+.cart{
+    margin: 20px;
+    border-radius: 6px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.cart img{
+    background-color: #ffff;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    padding: 10px;
+    width: 250px;
+    height: 120px;
+    cursor: pointer;
+}
+.cart button{
+    padding: 15px 45px 15px 45px;
+    border-radius: 30px;
+    background: transparent;
+    font-size: 15px;
+    color: white;
+    border: 1px solid #ffff;
+}
+.cart button:hover{
+    cursor: pointer;
+}
+.franchise-section{
+    position: relative;
+    background: rgba(255, 255, 255, 0.06);
+    padding: 70px;
+}
+
+
+.right{
+    position: absolute;
+    right: 32px;
+    top: 32px;
+}
+
+.row{
+    display: flex;
+    margin-top: 40px;
+}
+.row-left{
+    text-align: left;
+    margin-right: 100px;
+}
+.row-left i{
+    margin-right: 5px;
+}
+.franchise-section p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+}
+.row-right{
+    text-align: left;
+    
+}
+small{
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+img:hover{
+    cursor: pointer;
+}
+h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 24px
+}
