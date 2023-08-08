@@ -30,7 +30,7 @@ body{
     cursor: pointer;
 
 }
-.navbar li{
+.navbar , .footer li{
     list-style-type: none;
     display: inline-block;
     padding: 20px;
@@ -134,6 +134,7 @@ span{
     font-size: 40px;
     font-weight:900 ;
     font-family: 'Stick No Bills', sans-serif;
+    
 
 }
 p{
@@ -172,7 +173,7 @@ p{
 .cart button:hover{
     cursor: pointer;
 }
-.franchise-section{
+.franchise-section {
     position: relative;
     background: rgba(255, 255, 255, 0.06);
     padding: 70px;
@@ -188,12 +189,18 @@ p{
 .row{
     display: flex;
     margin-top: 40px;
+    width: 100%;
+    justify-content: center;
 }
 .row-left{
     text-align: left;
     margin-right: 100px;
+    width: 50%;
 }
 .row-left i{
+    margin-right: 5px;
+}
+.row-right i{
     margin-right: 5px;
 }
 .franchise-section p{
@@ -207,6 +214,7 @@ p{
 }
 .row-right{
     text-align: left;
+    width: 50%;
     
 }
 small{
@@ -225,4 +233,173 @@ h3{
     line-height: 38px;
     color: #FFFFFF;
     margin-bottom: 24px
+}
+.direction-button button{
+    background: transparent;
+    border: 1px solid #ffff;
+    color: #FFFFFF;
+    padding: 10px 35px 10px 35px;
+    border-radius: 30px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.direction-button button:hover{
+    cursor: pointer;
+    border: 1px solid red;
+}
+.direction-button button i{
+    font-size: 30px;
+    margin-left: 10px;
+    align-items: center;
+    color: red;
+}
+h1, h1>span {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+.franchise-section-2{
+    position: relative;
+    padding: 70px;
+}
+.left{
+    position: absolute;
+    left: 32px;
+    top: 32px;
+}
+.exp-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.exp-cart , .village-franchise i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+.exp-cart small{
+    font-size: 12px;
+    font-weight: 200;
+}
+.exp-cart , .village-franchise span{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.row-2 ,.row-exp{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+h1{
+    font-family: 'Butler';  
+    font-size: 40px;  
+
+}
+.village-franchise{
+    background-color: rgba(255, 255, 255, 0.06);
+}
+.op{
+    font-size: 30px;
+    font-family: 'Butler';
+    font-weight: 400;
+}
+.cart-1{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 350px;
+    height: 250px;
+    margin-right: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+}
+
+.cart-1 img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    
+}
+.cart-1 small{
+    font-size: 10px;
+    letter-spacing: 5px;
+}
+.cart-1 p{
+    color: black;
+    font-family: 'Butler';
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+.cart-1 span{
+    font-family: 'Butler';
+    font-size: 30px;
+    margin-right: 8px;
+    
+}
+.social{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.social img{
+    width: 240px;
+}
+.social-img{
+    display: flex;
+    
+}
+.s-img{
+    margin-right: 15px;
+}
+.footer{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.footer-container{
+    color: #fff;
+    float: left;
+    width: 100%;
+    padding: 70px 15px 0px 15px;
+    background: rgba(255, 255, 255, 0.06);
+    position: relative;
+}
+.footer-databox{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.5fr 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: auto;
+    grid-template-areas: ". . . .";
+    gap: 30px 45px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 55px;
+}
+.footer-logo{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+.footer-logo li{
+    margin: 0;
+    padding: 10px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #bbb;
+}
+h4{
+    font-size: 18px;
+    font-family: 'Butler';
+}
+.footer-icons i{
+    font-size: 40px;
+    color: red;
+    margin-top: 20px;
 }
