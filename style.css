@@ -30,7 +30,7 @@ body{
     cursor: pointer;
 
 }
-.navbar , .footer li{
+.navbar li{
     list-style-type: none;
     display: inline-block;
     padding: 20px;
@@ -393,13 +393,36 @@ h1{
     font-size: 15px;
     font-weight: 400;
     color: #bbb;
+    list-style: none;
 }
 h4{
     font-size: 18px;
     font-family: 'Butler';
+    margin: 15px;
 }
 .footer-icons i{
     font-size: 40px;
     color: red;
     margin-top: 20px;
+}
+.footer-icons img{
+    margin-top: 20px;
+}
+.row-copy{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: 5px;
+    color: #bbb;
+}
+.copyright{
+    margin-right: 900px;
+    
+}
+.footer-back img{
+    position: absolute;
+    left: -10px;
+    top: 0px;
 }
