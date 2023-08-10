@@ -690,12 +690,12 @@ sup {
     flex-direction: column;
 }
 df-messenger {
-    --df-messenger-bot-message: #9bac87;
+    --df-messenger-bot-message: #161615;
     --df-messenger-button-titlebar-color: rgb(165, 16, 16);
     --df-messenger-chat-background-color: #ffffff;
     --df-messenger-font-color: white;
     --df-messenger-send-icon: #878fac;
-    --df-messenger-user-message: #479b3d;
+    --df-messenger-user-message: #f11a0a;
     --df-messenger-minimized-chat-close-icon-color: #160202dd;
     /* --df-messenger-input-box-color: #0c010100; */
 }
